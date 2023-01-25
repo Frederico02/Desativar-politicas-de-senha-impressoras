@@ -11,7 +11,7 @@ int main(){
 	
 	ShowWindow(GetConsoleWindow(), SW_HIDE); // esconder prompt de comando
 	
-	system("[HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\printers\\PointAndPrint]\"RestrictDriverInstallationToAdministrators\"= dword:00000000");
-	
+	system("[HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\printers\\PointAndPrint]");
+	system("\"RestrictDriverInstallationToAdministrators\"=dword:00000000");
 	return 0;
 }
